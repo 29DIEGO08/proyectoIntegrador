@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "Alice",
+        "correo": "alice@example.com"
+    },
+    {
+        "nombre": "Bob",
+        "correo": "bob@example.com"
+    },
+    {
+        "nombre": "Charlie",
+        "correo": "charlie@example.com"
+    }
+]
