@@ -10,19 +10,35 @@ st.title("Momento 2 - Actividad 1")
 
 st.header("Descripción de la actividad")
 st.markdown("""
-Esta actividad es una introducción práctica a Python y a las estructuras de datos básicas.
-En ella, exploraremos los conceptos fundamentales de Python y aprenderemos a utilizar variables,
-tipos de datos, operadores, y las estructuras de datos más utilizadas como listas, tuplas,
-diccionarios y conjuntos.
+Esta actividad tiene como objetivo proporcionar una introducción práctica a Python y sus estructuras 
+de datos fundamentales. A través de ejercicios guiados, los participantes explorarán conceptos clave 
+como variables, tipos de datos, operadores y las estructuras de datos esenciales: listas, tuplas, 
+diccionarios y conjuntos. Además, se aprenderá a manipular y visualizar datos utilizando la biblioteca
+ Pandas y Streamlit, creando DataFrames desde diversas fuentes y mostrando los resultados de manera interactiva.
 """)
 
 st.header("Objetivos de aprendizaje")
 
 st.markdown("""
-- Comprender los tipos de datos básicos en Python
-- Aprender a utilizar variables y operadores
-- Dominar las estructuras de datos fundamentales
-- Aplicar estos conocimientos en ejemplos prácticos
+- Fundamentos de Python:
+Comprender y aplicar los tipos de datos básicos de Python.
+Utilizar variables y operadores de manera efectiva.
+            
+- Estructuras de Datos:
+Dominar el uso de listas, tuplas, diccionarios y conjuntos.
+Seleccionar la estructura de datos adecuada para cada situación.
+            
+- Manipulación de Datos con Pandas:
+Crear DataFrames desde múltiples fuentes: diccionarios, listas, Series, archivos CSV, Excel, JSON, bases de datos SQLite y arrays de NumPy.
+Manipular y transformar datos dentro de DataFrames.
+            
+- Visualización de Datos con Streamlit:
+Utilizar Streamlit para mostrar DataFrames de forma interactiva.
+Crear aplicaciones web sencillas para visualizar datos.
+            
+- Aplicación Práctica:
+Resolver problemas prácticos utilizando las estructuras de datos y las herramientas aprendidas.
+Aprender el manejo de errores al momento de leer archivos externos o bases de datos.
 """)
 
 st.header("Solución")
@@ -279,3 +295,4 @@ try:
 except Exception as e:
     st.error(f"Error {str(e)}")
 
+# 11. 
