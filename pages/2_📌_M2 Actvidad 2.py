@@ -46,6 +46,8 @@ if df is not None:
     st.title('Explorador de Datos de Estudiantes Colombianos')
     st.write('Utiliza esta aplicación para explorar el dataset de estudiantes.')"""
 
+st.code(code, language='python')
+
 @st.cache_data
 def load_data():
     file_path = os.path.join('static', 'dataset', 'estudiantes_colombia.csv')
@@ -71,6 +73,7 @@ if df is not None:
     if st.checkbox('Mostrar las últimas 5 filas'):
         st.subheader('Últimas 5 Filas')
         st.dataframe(df.tail())"""
+    st.code(code, language='python')
     
     if st.checkbox('Mostrar las primeras 5 filas'):
         st.subheader('Primeras 5 Filas')
@@ -84,6 +87,7 @@ if df is not None:
     code = """if st.checkbox('Mostrar información del dataset (.info())'):
         st.subheader('Información del Dataset')
         st.text(df.info())"""
+    st.code(code, language='python')
     
     if st.checkbox('Mostrar información del dataset (.info())'):
         st.subheader('Información del Dataset')
@@ -93,6 +97,7 @@ if df is not None:
     code = """ if st.checkbox('Mostrar descripción estadística del dataset (.describe())'):
         st.subheader('Descripción Estadística del Dataset')
         st.dataframe(df.describe())"""
+    st.code(code, language='python')
 
     if st.checkbox('Mostrar descripción estadística del dataset (.describe())'):
         st.subheader('Descripción Estadística del Dataset')
@@ -106,6 +111,7 @@ if df is not None:
     if selected_columns:
         st.subheader('Columnas Seleccionadas')
         st.dataframe(df[selected_columns])"""
+    st.code(code, language='python')
 
     st.subheader('Seleccionar Columnas a Mostrar')
     selected_columns = st.multiselect('Selecciona las columnas:', df.columns)
@@ -126,6 +132,7 @@ if df is not None:
     st.dataframe(df_filtrado)
 else:
     st.warning("No se pudieron cargar los datos. Verifica la ruta del archivo.")"""
+    st.code(code, language='python')
 
     st.subheader('Filtrar Estudiantes por Promedio')
     min_promedio = float(df['promedio'].min())
