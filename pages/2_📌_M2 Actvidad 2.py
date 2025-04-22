@@ -66,13 +66,13 @@ if df is not None:
 
     # Mostrar las primeras y últimas filas
 
-    code = """if st.checkbox('Mostrar las primeras 5 filas'):
+    code = '''if st.checkbox('Mostrar las primeras 5 filas'):
         st.subheader('Primeras 5 Filas')
         st.dataframe(df.head())
 
     if st.checkbox('Mostrar las últimas 5 filas'):
         st.subheader('Últimas 5 Filas')
-        st.dataframe(df.tail())"""
+        st.dataframe(df.tail())'''
     st.code(code, language='python')
     
     if st.checkbox('Mostrar las primeras 5 filas'):
